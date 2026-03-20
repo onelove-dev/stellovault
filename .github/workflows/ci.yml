@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main, contract]
+    branches: [main, master, contract]
   pull_request:
-    branches: [main, contract]
+    branches: [main, master, contract]
 
 jobs:
   # ── TypeScript Server ──────────────────────────────────────────────────────
