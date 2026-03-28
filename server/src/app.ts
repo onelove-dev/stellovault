@@ -34,6 +34,7 @@ import {
   notFoundMiddleware,
 } from "./middleware/error.middleware";
 import { requestTraceMiddleware } from "./middleware/request-trace.middleware";
+import paymentRoutes from "./routes/payment.routes";
 
 const app = express();
 
@@ -66,6 +67,7 @@ app.get("/metrics", async (_req: Request, res: Response) => {
 // ── API Routes ───────────────────────────────────────────────────────────────
 const api = "/api";
 
+app.use("/api", paymentRoutes);
 app.use(`${api}/auth`, authRoutes);
 app.use(`${api}/wallets`, walletRoutes);
 app.use(`${api}/users`, userRoutes);
