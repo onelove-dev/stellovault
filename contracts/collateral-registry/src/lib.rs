@@ -835,6 +835,7 @@ mod test {
     }
 
     #[test]
+    fn test_verify_collateral_not_found() {
     #[should_panic(expected = "HostError: Error(Contract, #8)")]
     fn test_accept_admin_no_pending() {
         let env = Env::default();
