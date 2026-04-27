@@ -283,7 +283,7 @@ export function ProposalForm() {
                   <div className="px-6 py-4 flex justify-between">
                     <span className="text-xs font-bold text-zinc-400 uppercase tracking-widest">Duration</span>
                     <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                      {formData.duration} days (expires {expiresAt.toLocaleDateString()})
+                      {formData.duration} days
                     </span>
                   </div>
                   <div className="px-6 py-4">
